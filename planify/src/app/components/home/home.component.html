@@ -1,1 +1,16 @@
 <h1>hola {{title}}</h1>
+<p *ngIf="esMayorEdad">La persona es mayor de Edad</p>
+<table>
+<tr *ngFor="let articulo of articulos">
+   <td>{{articulo.codigo}}</td>
+    <td>{{articulo.descripcion}}</td>
+    <td>{{articulo.precio}}</td>
+</tr>
+</table>
+<div [ngSwitch]="numeroAleatorio()">
+<p *ngSwitchCase="1">El numero es un 1</p>
+<p *ngSwitchCase="2">El numero es un 2</p>
+<p *ngSwitchDefault>El numero es un 3</p>
+</div>
+
+
